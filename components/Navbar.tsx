@@ -13,7 +13,7 @@ type Props = {};
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between w-screen border-b-[1px] rounded-md h-20 px-10 py-4">
+    <div className="flex justify-between w-full border-b-[1px] rounded-md h-20 px-10 py-4">
       <div className="flex items-center gap-3">
         <Link href="/">
           <div className="hover:bg-[#fefc01] w-[70px] p-5 h-[70px] rounded-xl my-auto mx-auto">

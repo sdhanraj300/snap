@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "../public/microsoft-store-logo.png";
 import banner from "../public/lesssocialmediamoresnapchat.png";
 import filters from "../public/snap-filters.png";
+import Link from "next/link";
 
 type Props = {};
 
@@ -20,12 +21,18 @@ const Header = (props: Props) => {
             all from your computer.
           </p>
         </div>
-        <div className="mt-4">
-          <p className="text-gray-500">Username or email address</p>
-          <Input placeholder="" className="w-2/3 bg-gray-200 rounded-xl" />
-          <Button className="bg-[#0197e5] text-white mt-4 w-2/3 rounded-full hover:bg-blue-600">
-            Log in
-          </Button>
+        <div className="mt-4 flex flex-col">
+          <Link href="/signup">
+            <Button className="bg-[#0c98e4] text-white mt-4 w-2/3 rounded-full hover:bg-blue-600">
+              Sign Up
+            </Button>
+          </Link>
+          <span className="ml-auto mt-4 w-2/3">Or</span>
+          <Link href="/login">
+            <Button className="bg-[#0197e5] text-white mt-4 w-2/3 rounded-full hover:bg-blue-600">
+              Log in
+            </Button>
+          </Link>
         </div>
         <div className="mt-6">
           <p className="text-gray-600">
